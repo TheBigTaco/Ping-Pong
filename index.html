@@ -11,19 +11,40 @@
     <div class="container">
       <form id="game" class="well" action="index.html" method="post">
         <h1 class="jumbotron">The Ping Pong Game</h1>
-        <p class="well"><em>Input a number to see all numbers up to that number that are divisible by 3, 5, and 15. They will be replaced by the words ping, pong, and ping-pong respectively.</em></p>
+        <div id="rules" class="well">
+          <h3><strong>Rules:</strong></h3>
+          <p><strong>Input a number to see all numbers up to that number that are divisible by 3, 5, and 15. They will be replaced by the words ping, pong, and ping-pong respectively.</strong><br>
+          <small>*Large numbers may take longer to proccess</small></p>
+        </div>
         <input id="userInput" type="text" placeholder="Enter a number">
         <button class="btn-success" type="submit" name="button">Play!</button>
       </form>
-      <ul id="output">
+      <div id="outputStyling" class="row">
+        <div class="col-md-3">
+          <div  class="panel panel-default">
+            <div class="panel-body">
+              <ul id="output">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
 
-      </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="img/puppets.gif" alt="Two puppets playing ping pong">
+          <img src="img/ping.gif" alt="Two animated people playing ping pong">
+          <img src="img/pong.gif" alt="A video game of ping pong" width="500px" height="300px">
+          <img src="img/pingpong.gif" alt="Two animated cats playing ping pong" width="500px" height="450px">
+        </div>
+      </div>
       <div id="returnNull">
-        <h3>Please make sure your input had none of the following</h3>
+        <h3>Please make sure your input had <strong><em>none</em></strong> of the following</h3>
         <ul>
           <li>Contained letters or symbols</li>
           <li>Contained decimals</li>
           <li>Contained spaces</li>
+          <li>Contained no input</li>
         </ul>
       </div>
     </div>

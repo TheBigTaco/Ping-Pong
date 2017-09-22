@@ -1,3 +1,20 @@
-#returnNull {
+#returnNull, #outputStyling {
   display: none;
+}
+
+body {
+  background-color: #f4d06b;
+}
+
+.jumbotron, #rules {
+  background-color: #f2834f;
+}
+
+#outputStyling {
+  background-color: #4ba36a;
+}
+
+#game {
+  background-color: #ffbb68;
+  border: solid #875315;
 }

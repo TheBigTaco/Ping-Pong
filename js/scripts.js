@@ -1,6 +1,6 @@
 
 function pingPong(userInput) {
-  if (/[^\d]/.test(userInput) || /[\s]/.test(userInput)) {
+  if (/[^\d]/.test(userInput) || /[\s]/.test(userInput) || userInput === "") {
     return null;
   }
   var counter = 1;
@@ -30,11 +30,14 @@ function pingPong(userInput) {
 $(document).ready(function(){
   $("#game").submit(function(event){
     event.preventDefault();
+    $("#output").text("");
     var userInput = $("#userInput").val();
     if (pingPong(userInput) === null) {
       $("#returnNull").show();
+      $("#outputStyling").hide();
     } else {
       $("#returnNull").hide();
+      $("#outputStyling").show();
       $("#output").append("<li>"+ pingPong(userInput));
     }
   });
