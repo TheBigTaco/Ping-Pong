@@ -78,6 +78,7 @@ $(document).ready(function(){
       $("#secret").hide();
       $(".hangmanWord").show();
       $("#winner").show();
+      $(".letters").hide();
     } else if(answerCheck === null) {
       $("#sternTalkingToo").text("Please enter a single letter")
     } else if(answerCheck === "E") {
@@ -112,9 +113,12 @@ $(document).ready(function(){
       $("#armTwo").hide();
       $("#legOne").show();
     } else if (answerCheck === 6) {
-      $(".container").hide();
+      $("#secret").hide();
+      $("#legOne").hide();
       $("#legTwo").show();
       $("#loss").show();
+      $(".letters").hide();
     }
+    $("#letters").prepend(userInput);
   });
 });
