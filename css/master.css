@@ -1,4 +1,4 @@
-#returnNull, #outputStyling {
+#returnNull, #outputStyling, #E, #P, #I, #C, #O, #D, #U, #S, #head, #body, #armOne, #loss, #armTwo, #legOne, #legTwo, #winner {
   display: none;
 }
 
@@ -17,4 +17,12 @@ body {
 #game {
   background-color: #ffbb68;
   border: solid #875315;
+}
+
+#loss {
+  color: red;
+}
+
+#winner {
+  color: green;
 }

@@ -1,0 +1,91 @@
+@font-face {
+font-family:'TradeGothicLTStd-Bd2';
+src: url('../fonts/TradeGothicLTStd-Bd2.eot');
+src: url('../fonts/TradeGothicLTStd-Bd2.eot?#iefix') format('embedded-opentype'),
+url('../fonts/TradeGothicLTStd-Bd2.woff') format('woff'),
+url('../fonts/TradeGothicLTStd-Bd2.ttf') format('truetype'),
+url('../fonts/TradeGothicLTStd-Bd2.svg#WisdomScriptAIRegular') format('svg');
+}
+@font-face {
+font-family:'TradeGothicLTStd-Bold';
+src: url('../fonts/TradeGothicLTStd-Bold.eot');
+src: url('../fonts/TradeGothicLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/TradeGothicLTStd-Bold.woff') format('woff'),
+url('../fonts/TradeGothicLTStd-Bold.ttf') format('truetype'),
+url('../fonts/TradeGothicLTStd-Bold.svg#WisdomScriptAIRegular') format('svg');
+}
+@font-face {
+    font-family: 'TradeGothicLTStdLight';
+    src: url('../fonts/TradeGothicLTStdLight.eot');
+    src: url('../fonts/TradeGothicLTStdLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TradeGothicLTStdLight.woff') format('woff'),
+         url('../fonts/TradeGothicLTStdLight.ttf') format('truetype'),
+         url('../fonts/TradeGothicLTStdLight.svg#TradeGothicLTStdLight') format('svg');
+}
+
+body {
+    font-family:'TradeGothicLTStd-Bold';
+}
+button {
+    background-color: #0068FF;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    
+    font-size: 12px;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+}
+.clickthrough{
+width:300px;
+height:250px;
+background-color:rgba(255,255,255,0);
+position:absolute;
+top:0px;
+left:0px;
+cursor:pointer;
+}
+button:hover,
+button:active {
+    color: #FAF000;
+}
+button:active {
+    font-size: 11px;
+}
+
+body {
+    margin: 0px;
+}
+#ad {
+    display: block;
+    border: rgb(145, 153, 153) 1px solid;
+    overflow: hidden;
+    width: 298px;
+    height: 248px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#banner {
+    position: absolute;
+    display: block;
+    width: 298px;
+    height: 248px;
+    background-color: #FFF;
+    background-image: url("../images/logo.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+/*.buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}*/
+.button {
+    height: 26px;
+    width: 108px;
+}
