@@ -7,14 +7,15 @@
 #### By Adam Titus
 
 ## Description
-A website that allows a user to input a number and see all multiples of 3 5 and 15 changed to pin, pong, and ping pond respectively. It also has a hangman game attached to it, that allows users to play input letters one at a time and guess a pre-set word of my choosing.
+A website that allows a user to input a number and see all multiples of 3 5 and 15 changed to ping, pong, and ping pong respectively. It also has a hangman game attached to it, that allows users to input letters one at a time and guess a pre-set word of my choosing.
+
+``Viewable at TheBigTaco.github.io/Ping-Pong``
 
 ## Installation Requirements
 * Clone this repository to the location of your choice
 * Navigate to this location using terminal, gitbash, or something similar.
 * Open it in your favored text editor
 * Must have a working internet connection
-* Viewable at TheBigTaco.github.io/Ping-Pong
 
 ## Known Bugs
 The Hangman game currently will let you win by submitting the correct letters 8 times, even if it's the same letter multiple times.
