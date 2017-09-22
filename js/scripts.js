@@ -1,26 +1,21 @@
 //for ping pong
 function pingPong(userInput) {
-  if (/[^\d]/.test(userInput) || /[\s]/.test(userInput) || userInput === "") {
+  if (/[^\d]/.test(userInput) || userInput === "") {
     return null;
   }
-  var counter = 1;
   var output = [];
   var gameArray = ["ping","pong","ping-pong"];
-  while (userInput >= counter) {
-    if (counter%3 === 0) {
-      if (counter%15 === 0) {
+  for (j=1; userInput >= j; j++) {
+    if (j%3 === 0) {
+      if (j%15 === 0) {
         output.push(gameArray[2] + "</li>")
-        counter++
       } else {
         output.push(gameArray[0] + "</li>")
-        counter++
       }
-    } else if (counter%5 === 0) {
+    } else if (j%5 === 0) {
       output.push(gameArray[1] + "</li>")
-      counter++
     } else {
-      output.push(counter);
-      counter++
+      output.push(j);
     }
   }
   output = output.join('<li>')
@@ -79,46 +74,64 @@ $(document).ready(function(){
       $(".hangmanWord").show();
       $("#winner").show();
       $(".letters").hide();
+      $("#sternTalkingToo").text("")
     } else if(answerCheck === null) {
       $("#sternTalkingToo").text("Please enter a single letter")
     } else if(answerCheck === "E") {
       $("#E").show();
+      $("#sternTalkingToo").text("")
     } else if(answerCheck === "P") {
       $("#P").show();
+      $("#sternTalkingToo").text("")
     } else if(answerCheck === "I") {
       $("#I").show();
+      $("#sternTalkingToo").text("")
     } else if(answerCheck === "C") {
       $("#C").show();
+      $("#sternTalkingToo").text("")
     } else if(answerCheck === "O") {
       $("#O").show();
+      $("#sternTalkingToo").text("")
     } else if(answerCheck === "D") {
       $("#D").show();
+      $("#sternTalkingToo").text("")
     } else if(answerCheck === "U") {
       $("#U").show();
+      $("#sternTalkingToo").text("")
     } else if(answerCheck === "S") {
       $("#S").show();
+      $("#sternTalkingToo").text("")
     } else if (answerCheck === 1) {
       $("#post").hide();
       $("#head").show();
+      $("#sternTalkingToo").text("")
     } else if (answerCheck === 2) {
       $("#head").hide();
       $("#body").show();
+      $("#sternTalkingToo").text("")
     } else if (answerCheck === 3) {
       $("#body").hide();
       $("#armOne").show();
+      $("#sternTalkingToo").text("")
     } else if (answerCheck === 4) {
       $("#armOne").hide();
       $("#armTwo").show();
+      $("#sternTalkingToo").text("")
     } else if (answerCheck === 5) {
       $("#armTwo").hide();
       $("#legOne").show();
+      $("#sternTalkingToo").text("")
     } else if (answerCheck === 6) {
       $("#secret").hide();
       $("#legOne").hide();
       $("#legTwo").show();
       $("#loss").show();
       $(".letters").hide();
+      $("#sternTalkingToo").text("")
     }
     $("#letters").prepend(userInput);
   });
+  $("#reset").click(function(){
+    window.location.reload();
+  })
 });
