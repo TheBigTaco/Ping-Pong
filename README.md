@@ -9,7 +9,7 @@
 ## Description
 A website that allows a user to input a number and see all multiples of 3 5 and 15 changed to ping, pong, and ping pong respectively. It also has a hangman game attached to it, that allows users to input letters one at a time and guess a pre-set word of my choosing.
 
-``Viewable at TheBigTaco.github.io/Ping-Pong``
+``Viewable at https://thebigtaco.github.io/Ping-Pong/index.html``
 
 ## Installation Requirements
 * Clone this repository to the location of your choice
