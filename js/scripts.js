@@ -21,6 +21,30 @@ function pingPong(userInput) {
   output = output.join('<li>')
   return output;
 }
+//reverse Ping Pong
+function pingPongReverse(userInput) {
+  if (/[^\d]/.test(userInput) || userInput === "") {
+    return null;
+  }
+  var output = [];
+  var gameArray = ["ping","pong","ping-pong"];
+  for (j=1; userInput >= j; j++) {
+    if (j%3 === 0) {
+      if (j%15 === 0) {
+        output.push(gameArray[2] + "</li>")
+      } else {
+        output.push(gameArray[0] + "</li>")
+      }
+    } else if (j%5 === 0) {
+      output.push(gameArray[1] + "</li>")
+    } else {
+      output.push(j);
+    }
+  }
+  output.reverse();
+  output = output.join('<li>')
+  return output;
+}
 
 
 
@@ -60,6 +84,20 @@ $(document).ready(function(){
       $("#returnNull").hide();
       $("#outputStyling").show();
       $("#output").append("<li>"+ pingPong(userInput));
+    }
+  });
+  //for reverse ping pong
+  $("#reverse").click(function(event){
+    event.preventDefault();
+    $("#output").text("");
+    var userInput = $("#userInput").val();
+    if (pingPongReverse(userInput) === null) {
+      $("#returnNull").show();
+      $("#outputStyling").hide();
+    } else {
+      $("#returnNull").hide();
+      $("#outputStyling").show();
+      $("#output").append("<li>"+ pingPongReverse(userInput));
     }
   });
 
